@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 0.5rem 0;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}

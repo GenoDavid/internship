@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFT</title>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <link href="./project.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="./functions.js"></script>
+    <div class="header">
+        <h1>Counsellor Dashboard</h1>
+    </div>
+    <div class="tabs">
+        <div class="tab" id="dashboardTab">Counsellor Dashboard</div>
+        <div class="tab" id="reportTab">Productivity Report</div>
+        <div class="tab" id="tasksTab">Follow up tasks</div>
+    </div>
+    <div class="tab-content" id="dashboardContent">
+        <div class="chart-container">
+            <div id="chartContainer" style="height: 300px;"></div>
+        </div>
+        <div class="chart-container" id="mobilePhonesChartContainer">
+            <!-- The Mobile Phones Used For chart will be rendered here -->
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="tab-content" id="reportContent">
+        <!-- Add your productivity report content here -->
+        <p>This is the Productivity Report tab content.</p>
+    </div>
+    <div class="tab-content" id="tasksContent">
+        <!-- Add your follow-up tasks content here -->
+        <p>This is the Follow up tasks tab content.</p>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                tabContents.forEach(content => content.style.display = 'none');
+                tabContents[index].style.display = 'block';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
