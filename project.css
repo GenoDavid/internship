@@ -31,12 +31,7 @@
     background-color: #ddd;
 }
 
-.tab-content {
-    display: none;
-    padding: 20px;
-}
-
-.chart-container {
+.chart-containers {
     width: 50%;
     float: left;
     box-sizing: border-box;

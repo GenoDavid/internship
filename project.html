@@ -9,6 +9,7 @@
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
     <link href="./project.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,14 +24,20 @@
     </div>
     <div class="tab-content" id="dashboardContent">
         <div class="chart-container">
-            <div id="chartContainer" style="height: 300px;"></div>
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
         </div>
-        <div class="chart-container" id="mobilePhonesChartContainer">
-            <!-- The Mobile Phones Used For chart will be rendered here -->
+    </div>
+    <div>
+        <div class="chart-containers" id="mobilePhonesChartContainer" style="width: 50%;">
+            <p>The Mobile Phones Used For chart will be rendered here</p>
         </div>
         <div style="clear: both;"></div>
+        <div class="chart-containers" id="chartdesing" style="width: 50%;">
+            <p>The Mobile Phones Used For chart will be rendered here</p>
+        </div>
     </div>
-    <div class="tab-content" id="reportContent">
+
+    <div class=" tab-content" id="reportContent">
         <!-- Add your productivity report content here -->
         <p>This is the Productivity Report tab content.</p>
     </div>
@@ -49,7 +56,6 @@
             });
         });
     </script>
-
 </body>
 
 </html>
